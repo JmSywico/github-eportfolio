@@ -492,6 +492,23 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__image-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.4rem;
+}
+
+.work__image {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.work__image-link:hover .work__image {
+    transform: scale(1.1);
+}
+
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
